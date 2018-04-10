@@ -428,7 +428,7 @@ let doFirst = new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log('Do first.');
         
-        resolve(doSecond);
+        resolve();
     }, 500);
 });
   
