@@ -215,13 +215,13 @@ let {a, b, c} = obj;
 A more concise syntax has been introduced for iteration through arrays and other iterable objects.
 
 ```js
-var arr = [1, 2, 3];
+var arr = ['a', 'b', 'c'];
 ```
 
 ```js
 // ES5
 for (var i = 0; i < arr.length; i++) {
-    console.log(i);
+    console.log(arr[i]);
 }
 ```
 
