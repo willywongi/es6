@@ -424,7 +424,7 @@ let doSecond = () => {
     console.log('Do second.');
 }
 
-let doFirst = new Promise((resolve, reject) => {
+let doFirst = () => new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log('Do first.');
         
@@ -432,7 +432,7 @@ let doFirst = new Promise((resolve, reject) => {
     }, 500);
 });
   
-doFirst.then(doSecond);
+doFirst().then(doSecond);
 ```
 
 An example below using `XMLHttpRequest`, for demonstrative purposes only ([Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) would be the proper modern API to use).
